@@ -67,14 +67,17 @@ queues:
 </arc-tab>
 
 </div>
-<arc-viewer>
+</arc-viewer>
 
-Which generates the corresponding code:
+Which generates the following directory structure after running `arc create`:
 
 ```bash
 /
-├── queues
-│   ├── convert-image/
-│   └── publish-log/
+├── src
+|  └── queues
+│    └── convert-image/
+|      └── index.mjs
+│    └── publish-log/
+|      └── index.mjs
 └── app.arc
 ```
